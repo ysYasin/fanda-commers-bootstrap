@@ -11,11 +11,13 @@
     <!-- bootstrap cdn css linking -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="text-capitalize">
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,15 +31,15 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">shoes</a>
+                            <a class="nav-link" href="#shoes">shoes</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#">
+                            <a class="nav-link " href="#backpack">
                                 backpack
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#">
+                            <a class="nav-link " href="#subscribe">
                                 subscribe
                             </a>
                         </li>
@@ -47,7 +49,7 @@
             </div>
         </nav>
         <!-- carosel tumbneil sart -->
-        <section class="mt-5">
+        <section class="margin-top">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item bg-danger-subtle border-0 p-sm-3 p-md-5 rounded-3 active">
@@ -149,7 +151,7 @@
         </section>
         <!-- catagories section end -->
         <!-- shoes section start -->
-        <section class="container my-5 py-5">
+        <section class="container my-5 py-5" id="shoes">
             <h2 class="mt-5">Shoes</h2>
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
                 <div class="col">
@@ -216,7 +218,7 @@
         </section>
         <!-- shoes section end -->
         <!-- backpack section start -->
-        <section class="container my-5 py-5">
+        <section class="container my-5 py-5" id="backpack">
             <h2 class="mt-5">Shoes</h2>
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
                 <div class="col">
@@ -282,6 +284,24 @@
             </div>
         </section>
         <!-- backpack section end -->
+        <!-- subscribe section started -->
+        <section class="container bg-danger-subtle rounded-3  my-5 pt-5">
+            <div class="d-flex flex-column py-3 my-5 justify-content-center align-items-center" id="subscribe">
+                <h1 class="text-uppercase">LET'S STAY IN TOUCH</h1>
+
+                <form class="d-flex flex-column pb-5">
+                    <p class="text-muted">Get updates on sales, specials and more</p>
+
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                    <button type="submit" class="btn btn-danger w-50 m-auto mt-3">Confirm identity</button>
+
+                </form>
+            </div>
+        </section>
+        <footer class="mt-5 text-center">
+            <p>©2023. Panda Commerce. All rights reserved. ysCoder, dhaka.</p>
+        </footer>
     </main>
     <!-- bootstrap cdn js linking -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
